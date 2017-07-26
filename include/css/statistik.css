@@ -1,0 +1,161 @@
+.panel-success>.panel-heading {
+	color: #429b43;
+}
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green > .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.panel-green > a {
+    color: #5cb85c;
+}
+
+.panel-green > a:hover {
+    color: #3d8b3d;
+}
+
+.panel-red {
+    border-color: #d9534f;
+}
+
+.panel-red > .panel-heading {
+    border-color: #bc0000; /* #d9534f */
+    color: #fff;
+    background-color: #bc0000; /* #d9534f */
+}
+
+.panel-red > a {
+    color: #bc0000; /* #d9534f */
+}
+
+.panel-red > a:hover {
+    color: #b52b27;
+}
+
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+.panel-yellow > .panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+.panel-yellow > a {
+    color: #f0ad4e;
+}
+
+.panel-yellow > a:hover {
+    color: #df8a13;
+}
+
+
+#einsaetze-pro-jahr, #einsaetze-pro-monat, #einsaetze-pro-monat-im-durchschnitt, #durchschnittliche-einsatzdauer, #durchschnittliche-einsatzzeit, #gruppenauswertung {
+	cursor: pointer;
+}
+#anwesenheit_platz {
+	font-size: 0.5em;
+}
+#anwesenheit_platz:before {
+	content: "(";
+}
+#anwesenheit_platz:after {
+	content: ". Platz)";
+}
+#awBestenliste .bester {
+	width: 20%; /* 100% / 5 */
+	float: left;
+	padding: 3px;
+}
+#awBestenliste .bild {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url("../../adressliste-action.php?getUserImage&user=-1");
+	height: 100px;
+	width: 100%;
+}
+#awBestenliste .name {
+	text-align: center;
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;;
+	white-space: nowrap;
+}
+#awBestenliste .platz {
+	text-align: center;
+}
+#awBestenliste .platz:after {
+	content: ". Platz";
+}
+#awBestenliste .prozent {
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+
+/* ------------ Detailansicht ------------ */
+
+/* Einsätze */
+#einsaetze td[data-info="nr"], #einsaetze td[data-info="datum"], #einsaetze td[data-info="zeit"], #einsaetze td[data-info="anwesende"], #einsaetze td[data-info="dauer"] {
+	text-align: center;
+}
+#einsaetze td[data-info="nr"] {
+	white-space: nowrap;
+}
+#einsaetze th[data-sort]:before {
+	content: "\f0dc";
+	font-family: fontawesome;
+	margin-right: 5px;
+	color: rgba(50, 50, 50, 0.5);
+}
+#einsaetze th[data-sort="ASC"]:before {
+	content: "\f0de";
+	color: inherit;
+}
+#einsaetze th[data-sort="DESC"]:before {
+	content: "\f0dd";
+	color: inherit;
+}
+#einsaetze thead th[data-sort] {
+	cursor: pointer;
+}
+#einsaetze thead th {
+	text-align: center;
+}
+#einsaetze tbody tr {
+	cursor: pointer;
+}
+
+/* screen size < 620px */
+#einsaetze {
+	font-size: 0.7em;
+}
+#einsaetze td {
+	word-break: break-all;
+}
+@media(min-width: 620px) {
+	#einsaetze {
+		font-size: 0.9em;
+	}
+}
+@media(min-width:650px){ /* normal */
+	#einsaetze {
+		font-size: 1em;
+	}
+	#einsaetze thead th {
+		white-space: nowrap;
+		word-break: keep-all;
+	}
+	#einsaetze td {
+		word-break: keep-all;
+	}
+}

@@ -1,0 +1,64 @@
+
+/* Google Kalender Einstellungen */
+.mv-container {
+	border: 1px solid #000000;
+}
+.view-container-border {
+	background-color: transparent;
+}
+.mv-daynames-table {
+	color: #000000;
+}
+.mv-dayname {
+	background-color: #ccc;
+}
+.month-row {
+	height: 17% !important; /* Overflow verhindern */
+}
+.mv-event-container {
+	border-bottom: 2px solid #000000;
+	border-top-color: #ccc;
+}
+.st-bg {
+	border-left: 1px solid #ccc;
+}
+.st-bg-today, .st-bg-td-first {
+	border-right: 0px;
+	background-color: rgba(188,0,0,0.1)
+}
+.st-dtitle-today {
+	border: 0px;
+	color: #000000;
+}
+.st-dtitle {
+	border-top: 1px solid #ccc;
+	background: transparent;
+}
+.ui-rtsr-unselected, .ui-rtsr-selected {
+	background-color: transparent;
+	border: 0px;
+}
+.ui-rtsr-name {
+	background-color: transparent;
+	color: #000000;
+	border: 0px;
+}
+.t1-embed, .t2-embed {
+	height: 0px;
+}
+.subscribe-image {
+	display: none !important;
+}
+#dateMenuArrow1 {
+	display: none;
+}
+#dpPopup1 {
+	display: none;
+}
+.date-picker-on {
+	border: 0px;
+	padding: 1px;
+}
+.today-button {
+	display: none;
+}

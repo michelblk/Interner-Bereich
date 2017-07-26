@@ -1,0 +1,10 @@
+#changePersonalData .input-group-addon {
+	display: table-cell;
+    width: 30%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	max-width: 0px;/* used to control overflow */
+}
+#changePersonalData .form-group {
+	width: 100%;
+}

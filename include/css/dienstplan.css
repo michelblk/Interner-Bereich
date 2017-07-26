@@ -1,0 +1,87 @@
+.table-striped>tbody>tr:hover {
+	background-color: rgba(188,0,0,1);
+	color: white;
+}
+
+.nomoretables tbody td, .nomoretables thead th {
+	vertical-align: middle !important;
+}
+
+@media only screen and (max-width: 1280px) {
+	.nomoretables {
+		font-size: 0.8em;
+		word-break: break-all;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+
+	/* Force table to not be like tables anymore */
+	.nomoretables table,
+	.nomoretables thead,
+	.nomoretables tbody,
+	.nomoretables th,
+	.nomoretables td,
+	.nomoretables tr {
+		display: block;
+		border: 0px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		background-color: transparent !important;
+	}
+
+	.nomoretables tr:hover {
+		color: inherit !important;
+	}
+
+	.nomoretables thead tr {
+		display: none;
+	}
+
+	.nomoretables tbody td {
+		position: relative !important;
+		padding-left: 50% !important;
+		text-align:left;
+		min-height: 2em;
+		border: 1px solid #ddd !important;
+	}
+
+	.nomoretables tbody td[data-empty="1"] {
+		display: none;
+	}
+
+	.nomoretables tbody td:before {
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+
+	.nomoretables tbody td:before {
+		content: attr(data-title);
+	}
+
+	.nomoretables tbody td[data-empty="0"]:nth-of-type(odd) {
+		background-color: #f9f9f9 !important;
+	}
+
+	.nomoretables tbody tr {
+		padding-bottom: 5px;
+		padding-top: 5px;
+		border-bottom: 2px solid black;
+		width: 100%;
+	}
+
+	.nomoretables {
+		font-size: 1em;
+		border: 0px;
+	}
+}
+
+.nomoretables tbody tr[data-show="0"] {
+	display: none;
+}

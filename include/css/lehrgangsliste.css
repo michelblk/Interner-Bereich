@@ -1,0 +1,44 @@
+.table-striped>tbody>tr:hover {
+	background-color: rgba(188,0,0,1);
+	color: white;
+}
+
+#ausbildungsliste {
+	overflow-x: auto;
+}
+@media only screen and (max-width: 900px) {
+	#ausbildungsliste {
+		font-size: 0.8em;
+	}
+}
+@media only screen and (max-width: 800px) {
+	#ausbildungsliste {
+		font-size: 0.7em;
+	}
+
+}
+
+#ausbildungsliste tbody td {
+	vertical-align: middle;
+	overflow: auto;
+}
+#ausbildungsliste tbody td[data-zusammengefasst="0"] {
+	text-align: center;
+}
+#ausbildungsliste tbody td[data-zusammengefasst="0"] .icon[data-state="0"]:before {
+	color: red;
+	opacity: 0.7;
+	content: "-" !important;
+}
+#ausbildungsliste tbody tr:hover .icon[data-state="0"]:before {
+	color: white;
+}
+#ausbildungsliste tbody td[data-zusammengefasst="1"] .icon[data-state="0"]:before {
+	display: none; /* wird durch php bereits herausgefiltert */
+}
+#ausbildungsliste tbody td[data-zusammengefasst] .icon[data-state="1"]:before {
+	/* color: green !important; */
+}
+#ausbildungsliste thead th {
+	text-align: center;
+}

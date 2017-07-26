@@ -1,0 +1,48 @@
+#userinfo {
+	display: none;
+}
+#users tbody tr {
+	cursor: pointer;
+}
+#users tbody tr:hover, #users tbody tr.active, #users tbody tr.active>td {
+	background-color: rgba(188,0,0,1);
+	color: white;
+}
+#userImage {
+	width: 120px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	padding: 0px;
+}
+
+#users tr td[data-info="gruppe"] {
+	max-width: 10em;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#userinfo tr td[data-legend] {
+	width: 1%; /* so klein wie möglich halten */
+}
+
+.userinfo-groups[data-important="true"] {
+	font-weight: bold;
+}
+#users th[data-sort]:before {
+	content: "\f0dc";
+	font-family: fontawesome;
+	margin-right: 5px;
+	color: rgba(50, 50, 50, 0.5);
+}
+#users th[data-sort="ASC"]:before {
+	content: "\f0de";
+	color: inherit;
+}
+#users th[data-sort="DESC"]:before {
+	content: "\f0dd";
+	color: inherit;
+}
+#users thead th[data-sort] {
+	cursor: pointer;
+}
